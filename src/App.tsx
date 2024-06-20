@@ -1,10 +1,9 @@
-import { useState } from 'react'
-import Register from './Register'
-import Login from './Login'
-import Home from './Home'
+import Register from './pages/Register'
+import Login from './pages/Login'
+import Home from './pages/Home'
 import { Navigate } from 'react-router-dom'
-import Receivers from './Receivers'
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import Members from './pages/Members'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 const App: React.FC = () => (
 	<BrowserRouter>
 		<Routes>
@@ -12,7 +11,7 @@ const App: React.FC = () => (
 			<Route path="/login" element={<Login />} />
 			<Route path="/register" element={<Register />} />
 			<Route path="/home" element={<Home />} />
-			<Route path="/receivers" element={<Receivers />} />
+			<Route path="/members" element={<Members />} />
 		</Routes>
 	</BrowserRouter>
 );
